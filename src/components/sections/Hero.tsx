@@ -28,13 +28,7 @@ export function Hero() {
             transition={{ duration: 0.6 }}
             className="space-y-8"
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-100 text-brand-800 text-sm font-medium">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
-              </span>
-              Disponible pour vos projets 2025
-            </div>
+            {/* Badge removed as requested */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-gray-900 leading-[1.1]">
               Rénovation de <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-500">
@@ -45,16 +39,16 @@ export function Hero() {
               Donnez une nouvelle vie à votre maison. Spécialistes en ravalement, isolation extérieure et peinture de façade depuis plus de 10 ans.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 onClick={scrollToContact}
                 className="bg-brand hover:bg-brand-500 text-gray-900 font-bold text-lg px-8 py-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all"
               >
                 Obtenir un Devis Gratuit
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 size="lg"
                 onClick={() => document.querySelector('#services')?.scrollIntoView({ behavior: 'smooth' })}
                 className="border-gray-300 text-gray-700 hover:bg-gray-50 text-lg px-8 py-6"
@@ -83,9 +77,9 @@ export function Hero() {
             className="relative hidden lg:block"
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
-              <img 
-                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" 
-                alt="Maison moderne rénovée" 
+              <img
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop"
+                alt="Maison moderne rénovée"
                 className="w-full h-auto object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-8">
