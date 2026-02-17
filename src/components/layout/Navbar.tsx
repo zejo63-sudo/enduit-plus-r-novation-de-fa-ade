@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, Phone, PaintRoller } from 'lucide-react';
+import { Menu, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
@@ -44,17 +44,11 @@ export function Navbar() {
             className="flex items-center gap-2 cursor-pointer group"
             onClick={() => scrollToSection('#hero')}
           >
-            <div className="bg-brand text-gray-900 p-2 rounded-lg shadow-sm group-hover:shadow-md transition-all duration-300 group-hover:scale-105">
-              <PaintRoller className="w-6 h-6" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-gray-900 leading-none tracking-tight">
-                Enduit<span className="text-brand-600">Plus</span>
-              </span>
-              <span className="text-[10px] font-medium text-gray-500 uppercase tracking-wider leading-none mt-0.5">
-                Ravalement de Façade
-              </span>
-            </div>
+            <img 
+              src="https://fal.media/files/monkey/o7T4F0000000000000000.png" 
+              alt="Enduit Plus 63 Logo" 
+              className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+            />
           </div>
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
@@ -86,10 +80,11 @@ export function Navbar() {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <SheetTitle className="text-left text-lg font-bold mb-6 flex items-center gap-2">
-                  <div className="bg-brand text-gray-900 p-1.5 rounded-md">
-                    <PaintRoller className="w-5 h-5" />
-                  </div>
-                  Enduit Plus
+                  <img 
+                    src="https://fal.media/files/monkey/o7T4F0000000000000000.png" 
+                    alt="Enduit Plus 63 Logo" 
+                    className="h-10 w-auto object-contain"
+                  />
                 </SheetTitle>
                 <div className="flex flex-col gap-6 mt-8">
                   {navItems.map((item) => (

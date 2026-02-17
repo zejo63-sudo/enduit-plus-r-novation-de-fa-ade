@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Linkedin, ArrowUp, PaintRoller } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, ArrowUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 export function Footer() {
   const scrollToTop = () => {
@@ -12,16 +12,12 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-6">
             <div className="flex items-center gap-2 group cursor-pointer" onClick={scrollToTop}>
-              <div className="bg-brand text-gray-900 p-2 rounded-lg shadow-sm group-hover:shadow-glow transition-all duration-300">
-                <PaintRoller className="w-6 h-6" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-bold text-white leading-none tracking-tight">
-                  Enduit<span className="text-brand">Plus</span>
-                </span>
-                <span className="text-[10px] font-medium text-gray-400 uppercase tracking-wider leading-none mt-0.5">
-                  Ravalement de Façade
-                </span>
+              <div className="bg-white p-2 rounded-lg shadow-sm group-hover:shadow-glow transition-all duration-300 inline-block">
+                <img 
+                  src="https://fal.media/files/monkey/o7T4F0000000000000000.png" 
+                  alt="Enduit Plus 63 Logo" 
+                  className="h-12 w-auto object-contain"
+                />
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
@@ -72,10 +68,10 @@ export function Footer() {
         </div>
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm text-center md:text-left">
-            © {new Date().getFullYear()} Enduit Plus. Tous droits réservés.
+            © {new Date().getFullYear()} Enduit Plus 63. Tous droits réservés.
           </p>
           <div className="flex items-center gap-4">
-             <p className="text-gray-600 text-xs">Built with ❤�� by Aurelia</p>
+             <p className="text-gray-600 text-xs">Built with ❤️ by Aurelia</p>
              <Button
               variant="outline"
               size="icon"
