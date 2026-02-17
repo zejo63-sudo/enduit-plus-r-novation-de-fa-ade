@@ -1,98 +1,86 @@
 import React from 'react';
-import { Facebook, Instagram, Linkedin, ArrowUp } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, ArrowUp, PaintRoller } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 export function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   return (
-    <footer className="bg-gray-900 text-white pt-16 pb-8">
+    <footer className="bg-gray-900 text-white pt-16 pb-8 border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="space-y-6">
-            <div className="inline-block w-fit">
-              <svg
-                width="150"
-                height="50"
-                viewBox="0 0 150 50"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-32 h-auto"
-                aria-label="Logo Enduit Plus 63 - Ravalement de façade"
-              >
-                <rect width="150" height="50" rx="4" fill="#FACC15" />
-                <text
-                  x="50%"
-                  y="50%"
-                  dominantBaseline="middle"
-                  textAnchor="middle"
-                  fontFamily="Arial, sans-serif"
-                  fontSize="20"
-                  fontWeight="bold"
-                  fill="#1F2937"
-                >
-                  Enduit Plus
-                </text>
-              </svg>
+            <div className="flex items-center gap-2 group cursor-pointer" onClick={scrollToTop}>
+              <div className="bg-brand text-gray-900 p-2 rounded-lg shadow-sm group-hover:shadow-glow transition-all duration-300">
+                <PaintRoller className="w-6 h-6" />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-xl font-bold text-white leading-none tracking-tight">
+                  Enduit<span className="text-brand">Plus</span>
+                </span>
+                <span className="text-[10px] font-medium text-gray-400 uppercase tracking-wider leading-none mt-0.5">
+                  Ravalement de Façade
+                </span>
+              </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
               Votre expert en rénovation de façade et isolation extérieure. Qualité, durabilité et esthétique pour votre habitat.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="text-gray-400 hover:text-brand transition-colors">
+              <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-brand hover:text-gray-900 transition-all duration-300 hover:-translate-y-1">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-brand transition-colors">
+              <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-brand hover:text-gray-900 transition-all duration-300 hover:-translate-y-1">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-brand transition-colors">
+              <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-brand hover:text-gray-900 transition-all duration-300 hover:-translate-y-1">
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
           </div>
           {/* Links */}
           <div>
-            <h4 className="font-bold text-lg mb-6">Navigation</h4>
+            <h4 className="font-bold text-lg mb-6 text-white relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-2 after:w-12 after:h-1 after:bg-brand after:rounded-full">Navigation</h4>
             <ul className="space-y-3 text-gray-400">
-              <li><a href="#hero" className="hover:text-brand transition-colors">Accueil</a></li>
-              <li><a href="#services" className="hover:text-brand transition-colors">Services</a></li>
-              <li><a href="#gallery" className="hover:text-brand transition-colors">Réalisations</a></li>
-              <li><a href="#contact" className="hover:text-brand transition-colors">Contact</a></li>
+              <li><a href="#hero" className="hover:text-brand transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-brand opacity-0 hover:opacity-100 transition-opacity"></span>Accueil</a></li>
+              <li><a href="#services" className="hover:text-brand transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-brand opacity-0 hover:opacity-100 transition-opacity"></span>Services</a></li>
+              <li><a href="#gallery" className="hover:text-brand transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-brand opacity-0 hover:opacity-100 transition-opacity"></span>Réalisations</a></li>
+              <li><a href="#contact" className="hover:text-brand transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-brand opacity-0 hover:opacity-100 transition-opacity"></span>Contact</a></li>
             </ul>
           </div>
           {/* Services */}
           <div>
-            <h4 className="font-bold text-lg mb-6">Services</h4>
+            <h4 className="font-bold text-lg mb-6 text-white relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-2 after:w-12 after:h-1 after:bg-brand after:rounded-full">Services</h4>
             <ul className="space-y-3 text-gray-400">
-              <li>Ravalement de façade</li>
-              <li>Isolation ITE</li>
-              <li>Peinture extérieure</li>
-              <li>Traitement hydrofuge</li>
+              <li className="hover:text-white transition-colors">Ravalement de façade</li>
+              <li className="hover:text-white transition-colors">Isolation ITE</li>
+              <li className="hover:text-white transition-colors">Peinture extérieure</li>
+              <li className="hover:text-white transition-colors">Traitement hydrofuge</li>
             </ul>
           </div>
           {/* Legal */}
           <div>
-            <h4 className="font-bold text-lg mb-6">Informations</h4>
+            <h4 className="font-bold text-lg mb-6 text-white relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-2 after:w-12 after:h-1 after:bg-brand after:rounded-full">Informations</h4>
             <ul className="space-y-3 text-gray-400">
-              <li>Mentions légales</li>
-              <li>Politique de confidentialité</li>
-              <li>CGV</li>
-              <li>Plan du site</li>
+              <li><a href="#" className="hover:text-brand transition-colors">Mentions légales</a></li>
+              <li><a href="#" className="hover:text-brand transition-colors">Politique de confidentialité</a></li>
+              <li><a href="#" className="hover:text-brand transition-colors">CGV</a></li>
+              <li><a href="#" className="hover:text-brand transition-colors">Plan du site</a></li>
             </ul>
           </div>
         </div>
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm text-center md:text-left">
-            © {new Date().getFullYear()} Enduit Plus 63. Tous droits réservés.
+            © {new Date().getFullYear()} Enduit Plus. Tous droits réservés.
           </p>
           <div className="flex items-center gap-4">
-             <p className="text-gray-600 text-xs">Built with ❤️ by Aurelia</p>
+             <p className="text-gray-600 text-xs">Built with ❤�� by Aurelia</p>
              <Button
               variant="outline"
               size="icon"
               onClick={scrollToTop}
-              className="rounded-full bg-gray-800 border-gray-700 text-white hover:bg-brand hover:text-gray-900 transition-colors"
+              className="rounded-full bg-gray-800 border-gray-700 text-white hover:bg-brand hover:text-gray-900 hover:border-brand transition-all duration-300 shadow-lg hover:shadow-brand/20"
             >
               <ArrowUp className="w-4 h-4" />
             </Button>
