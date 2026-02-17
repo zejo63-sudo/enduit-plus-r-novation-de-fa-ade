@@ -44,10 +44,11 @@ export function Navbar() {
             className="flex items-center gap-2 cursor-pointer"
             onClick={() => scrollToSection('#hero')}
           >
-            <img
-              src="https://via.placeholder.com/150x50?text=Logo"
-              alt="Enduit Plus - Ravalement de façade"
-              className="w-20 h-14 object-contain block border-2 border-red-500 bg-gray-200"
+            <div
+              className="w-20 h-14 block border-2 border-red-500 bg-gray-200 bg-no-repeat bg-center bg-contain"
+              style={{ backgroundImage: 'url(https://via.placeholder.com/150x50?text=Logo)' }}
+              aria-label="Enduit Plus - Ravalement de façade"
+              role="img"
             />
           </div>
           {/* Desktop Navigation */}

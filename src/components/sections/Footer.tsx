@@ -12,10 +12,11 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-6">
             <div className="bg-white p-3 rounded-xl inline-block w-fit">
-              <img
-                src="https://via.placeholder.com/150x50?text=Logo"
-                alt="Logo Enduit Plus 63 - Ravalement de façade"
-                className="w-20 h-14 object-contain block border-2 border-red-500 bg-gray-200"
+              <div
+                className="w-20 h-14 block border-2 border-red-500 bg-gray-200 bg-no-repeat bg-center bg-contain"
+                style={{ backgroundImage: 'url(https://via.placeholder.com/150x50?text=Logo)' }}
+                aria-label="Logo Enduit Plus 63 - Ravalement de façade"
+                role="img"
               />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
@@ -69,7 +70,7 @@ export function Footer() {
             © {new Date().getFullYear()} Enduit Plus 63. Tous droits réservés.
           </p>
           <div className="flex items-center gap-4">
-             <p className="text-gray-600 text-xs">Built with ❤️ by Aurelia</p>
+             <p className="text-gray-600 text-xs">Built with ❤�� by Aurelia</p>
              <Button
               variant="outline"
               size="icon"
