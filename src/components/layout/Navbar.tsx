@@ -47,8 +47,7 @@ export function Navbar() {
             <img
               src="https://i.imgur.com/vH8Yh0k.png"
               alt="Enduit Plus - Ravalement de façade"
-              className="h-14 w-auto object-contain block"
-              style={{ display: 'block' }}
+              className="h-14 w-auto object-contain"
             />
           </div>
           {/* Desktop Navigation */}

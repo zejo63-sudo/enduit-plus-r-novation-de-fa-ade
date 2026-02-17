@@ -15,8 +15,7 @@ export function Footer() {
               <img
                 src="https://i.imgur.com/vH8Yh0k.png"
                 alt="Logo Enduit Plus 63 - Ravalement de façade"
-                className="h-12 w-auto object-contain block"
-                style={{ display: 'block' }}
+                className="w-20 h-14 object-contain block border-2 border-red-500 bg-gray-200"
               />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
