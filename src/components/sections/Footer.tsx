@@ -11,13 +11,30 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="space-y-6">
-            <div className="bg-white p-3 rounded-xl inline-block w-fit">
-              <div
-                className="w-20 h-14 block border-2 border-red-500 bg-gray-200 bg-no-repeat bg-center bg-contain"
-                style={{ backgroundImage: 'url(https://via.placeholder.com/150x50?text=Logo)' }}
+            <div className="inline-block w-fit">
+              <svg
+                width="150"
+                height="50"
+                viewBox="0 0 150 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-32 h-auto"
                 aria-label="Logo Enduit Plus 63 - Ravalement de façade"
-                role="img"
-              />
+              >
+                <rect width="150" height="50" rx="4" fill="#FACC15" />
+                <text
+                  x="50%"
+                  y="50%"
+                  dominantBaseline="middle"
+                  textAnchor="middle"
+                  fontFamily="Arial, sans-serif"
+                  fontSize="20"
+                  fontWeight="bold"
+                  fill="#1F2937"
+                >
+                  Enduit Plus
+                </text>
+              </svg>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
               Votre expert en rénovation de façade et isolation extérieure. Qualité, durabilité et esthétique pour votre habitat.
@@ -70,7 +87,7 @@ export function Footer() {
             © {new Date().getFullYear()} Enduit Plus 63. Tous droits réservés.
           </p>
           <div className="flex items-center gap-4">
-             <p className="text-gray-600 text-xs">Built with ❤�� by Aurelia</p>
+             <p className="text-gray-600 text-xs">Built with ❤️ by Aurelia</p>
              <Button
               variant="outline"
               size="icon"
