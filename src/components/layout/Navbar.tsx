@@ -45,9 +45,9 @@ export function Navbar() {
             onClick={() => scrollToSection('#hero')}
           >
             <img
-              src="https://fal.media/files/koala/ChH0y8eY_y_u_Xk8y_eX_.png"
+              src="https://i.imgur.com/tL8Zq5N.png"
               alt="Enduit Plus 63 Logo"
-              className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              className="h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             />
           </div>
           {/* Desktop Navigation */}
@@ -81,9 +81,9 @@ export function Navbar() {
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <SheetTitle className="text-left text-lg font-bold mb-6 flex items-center gap-2">
                   <img
-                    src="https://fal.media/files/koala/ChH0y8eY_y_u_Xk8y_eX_.png"
+                    src="https://i.imgur.com/tL8Zq5N.png"
                     alt="Enduit Plus 63 Logo"
-                    className="h-10 w-auto object-contain"
+                    className="h-12 w-auto object-contain"
                   />
                 </SheetTitle>
                 <div className="flex flex-col gap-6 mt-8">
