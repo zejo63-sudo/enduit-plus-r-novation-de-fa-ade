@@ -26,13 +26,14 @@ const formSchema = z.object({
   name: z.string().min(2, { message: 'Le nom doit contenir au moins 2 caractères.' }),
   email: z.string().email({ message: 'Adresse email invalide.' }),
   phone: z.string().min(10, { message: 'Numéro de téléphone invalide.' }),
-  service: z.string({ required_error: 'Veuillez sélectionner un service.' }).min(1, { message: 'Veuillez sélectionner un service.' }),
+  service: z.string().min(1, { message: 'Veuillez sélectionner un service.' }),
   message: z.string().min(10, { message: 'Votre message doit contenir au moins 10 caractères.' }),
 });
+type FormValues = z.infer<typeof formSchema>;
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
-  const form = useForm<z.infer<typeof formSchema>>({
+  const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: '',
@@ -42,25 +43,28 @@ export function ContactForm() {
       message: '',
     },
   });
-  async function onSubmit(values: z.infer<typeof formSchema>) {
+  const onSubmit = async (values: FormValues) => {
     setIsSubmitting(true);
     try {
       // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 1500));
-      console.log(values);
+      console.log('Form submitted:', values);
       setIsSuccess(true);
       toast.success('Votre demande a été envoyée avec succès !', {
         description: 'Nous vous recontacterons sous 24h.',
       });
       form.reset();
-      setTimeout(() => setIsSuccess(false), 3000);
+      // Reset success state after 3 seconds
+      setTimeout(() => {
+        setIsSuccess(false);
+      }, 3000);
     } catch (error) {
       console.error('Error submitting form:', error);
       toast.error("Une erreur est survenue lors de l'envoi.");
     } finally {
       setIsSubmitting(false);
     }
-  }
+  };
   return (
     <section id="contact" className="py-24 bg-white relative overflow-hidden">
       {/* Decorative blob */}

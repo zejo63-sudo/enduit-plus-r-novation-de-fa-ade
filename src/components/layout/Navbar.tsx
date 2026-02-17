@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
@@ -34,19 +34,21 @@ export function Navbar() {
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-transparent',
-        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm border-gray-100 py-3' : 'bg-transparent py-5'
+        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm border-gray-100 py-2' : 'bg-transparent py-4'
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('#hero')}>
-            <div className="w-10 h-10 bg-brand rounded-lg flex items-center justify-center shadow-lg">
-              <span className="text-xl font-bold text-white">E+</span>
-            </div>
-            <span className={cn("text-xl font-bold tracking-tight transition-colors", isScrolled ? "text-gray-900" : "text-gray-900")}>
-              Enduit<span className="text-brand-600">Plus</span>
-            </span>
+          <div 
+            className="flex items-center gap-2 cursor-pointer" 
+            onClick={() => scrollToSection('#hero')}
+          >
+            <img 
+              src="https://i.imgur.com/vH8Yh0k.png" 
+              alt="Enduit Plus 63 Logo" 
+              className="h-12 w-auto object-contain"
+            />
           </div>
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
@@ -54,12 +56,12 @@ export function Navbar() {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-sm font-medium text-gray-600 hover:text-brand-600 transition-colors"
+                className="text-sm font-medium text-gray-700 hover:text-brand-600 transition-colors"
               >
                 {item.name}
               </button>
             ))}
-            <Button 
+            <Button
               onClick={() => scrollToSection('#contact')}
               className="bg-brand hover:bg-brand-500 text-gray-900 font-semibold shadow-md hover:shadow-lg transition-all"
             >
@@ -88,7 +90,7 @@ export function Navbar() {
                       {item.name}
                     </button>
                   ))}
-                  <Button 
+                  <Button
                     onClick={() => scrollToSection('#contact')}
                     className="w-full bg-brand hover:bg-brand-500 text-gray-900 font-bold mt-4"
                   >

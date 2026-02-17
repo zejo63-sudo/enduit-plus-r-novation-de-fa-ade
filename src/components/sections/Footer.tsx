@@ -10,14 +10,13 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-brand rounded-md flex items-center justify-center">
-                <span className="text-lg font-bold text-gray-900">E+</span>
-              </div>
-              <span className="text-xl font-bold">
-                Enduit<span className="text-brand">Plus</span>
-              </span>
+          <div className="space-y-6">
+            <div className="bg-white p-3 rounded-xl inline-block w-fit">
+              <img 
+                src="https://i.imgur.com/vH8Yh0k.png" 
+                alt="Enduit Plus 63 Logo" 
+                className="h-12 w-auto object-contain"
+              />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
               Votre expert en rénovation de façade et isolation extérieure. Qualité, durabilité et esthétique pour votre habitat.
@@ -67,13 +66,13 @@ export function Footer() {
         </div>
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm text-center md:text-left">
-            © {new Date().getFullYear()} Enduit Plus. Tous droits réservés.
+            © {new Date().getFullYear()} Enduit Plus 63. Tous droits réservés.
           </p>
           <div className="flex items-center gap-4">
              <p className="text-gray-600 text-xs">Built with ❤️ by Aurelia</p>
-             <Button 
-              variant="outline" 
-              size="icon" 
+             <Button
+              variant="outline"
+              size="icon"
               onClick={scrollToTop}
               className="rounded-full bg-gray-800 border-gray-700 text-white hover:bg-brand hover:text-gray-900 transition-colors"
             >
