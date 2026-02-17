@@ -44,9 +44,9 @@ export function Navbar() {
             className="flex items-center gap-2 cursor-pointer group"
             onClick={() => scrollToSection('#hero')}
           >
-            <img 
-              src="https://fal.media/files/monkey/o7T4F0000000000000000.png" 
-              alt="Enduit Plus 63 Logo" 
+            <img
+              src="https://fal.media/files/koala/ChH0y8eY_y_u_Xk8y_eX_.png"
+              alt="Enduit Plus 63 Logo"
               className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             />
           </div>
@@ -80,9 +80,9 @@ export function Navbar() {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <SheetTitle className="text-left text-lg font-bold mb-6 flex items-center gap-2">
-                  <img 
-                    src="https://fal.media/files/monkey/o7T4F0000000000000000.png" 
-                    alt="Enduit Plus 63 Logo" 
+                  <img
+                    src="https://fal.media/files/koala/ChH0y8eY_y_u_Xk8y_eX_.png"
+                    alt="Enduit Plus 63 Logo"
                     className="h-10 w-auto object-contain"
                   />
                 </SheetTitle>
