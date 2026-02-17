@@ -13,7 +13,7 @@ export function Footer() {
           <div className="space-y-6">
             <div className="bg-white p-3 rounded-xl inline-block w-fit">
               <img
-                src="https://i.imgur.com/vH8Yh0k.png"
+                src="https://via.placeholder.com/150x50?text=Logo"
                 alt="Logo Enduit Plus 63 - Ravalement de façade"
                 className="w-20 h-14 object-contain block border-2 border-red-500 bg-gray-200"
               />
