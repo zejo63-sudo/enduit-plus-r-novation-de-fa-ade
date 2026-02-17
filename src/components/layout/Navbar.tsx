@@ -40,14 +40,14 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div 
-            className="flex items-center gap-2 cursor-pointer" 
+          <div
+            className="flex items-center gap-2 cursor-pointer"
             onClick={() => scrollToSection('#hero')}
           >
-            <img 
-              src="https://i.imgur.com/vH8Yh0k.png" 
-              alt="Enduit Plus 63 Logo" 
-              className="h-12 w-auto object-contain"
+            <img
+              src="https://i.imgur.com/vH8Yh0k.png"
+              alt="Enduit Plus - Ravalement de façade"
+              className="h-14 w-auto object-contain"
             />
           </div>
           {/* Desktop Navigation */}

@@ -12,9 +12,9 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-6">
             <div className="bg-white p-3 rounded-xl inline-block w-fit">
-              <img 
-                src="https://i.imgur.com/vH8Yh0k.png" 
-                alt="Enduit Plus 63 Logo" 
+              <img
+                src="https://i.imgur.com/vH8Yh0k.png"
+                alt="Logo Enduit Plus 63 - Ravalement de façade"
                 className="h-12 w-auto object-contain"
               />
             </div>
