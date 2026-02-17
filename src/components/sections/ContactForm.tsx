@@ -26,7 +26,7 @@ const formSchema = z.object({
   name: z.string().min(2, { message: 'Le nom doit contenir au moins 2 caractères.' }),
   email: z.string().email({ message: 'Adresse email invalide.' }),
   phone: z.string().min(10, { message: 'Numéro de téléphone invalide.' }),
-  service: z.string({ required_error: 'Veuillez sélectionner un service.' }),
+  service: z.string({ required_error: 'Veuillez sélectionner un service.' }).min(1, { message: 'Veuillez sélectionner un service.' }),
   message: z.string().min(10, { message: 'Votre message doit contenir au moins 10 caractères.' }),
 });
 export function ContactForm() {
@@ -38,21 +38,28 @@ export function ContactForm() {
       name: '',
       email: '',
       phone: '',
+      service: '',
       message: '',
     },
   });
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    console.log(values);
-    setIsSubmitting(false);
-    setIsSuccess(true);
-    toast.success('Votre demande a été envoyée avec succès !', {
-      description: 'Nous vous recontacterons sous 24h.',
-    });
-    form.reset();
-    setTimeout(() => setIsSuccess(false), 3000);
+    try {
+      // Simulate API call
+      await new Promise((resolve) => setTimeout(resolve, 1500));
+      console.log(values);
+      setIsSuccess(true);
+      toast.success('Votre demande a été envoyée avec succès !', {
+        description: 'Nous vous recontacterons sous 24h.',
+      });
+      form.reset();
+      setTimeout(() => setIsSuccess(false), 3000);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast.error("Une erreur est survenue lors de l'envoi.");
+    } finally {
+      setIsSubmitting(false);
+    }
   }
   return (
     <section id="contact" className="py-24 bg-white relative overflow-hidden">
