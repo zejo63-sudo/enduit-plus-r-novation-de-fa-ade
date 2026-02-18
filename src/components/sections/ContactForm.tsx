@@ -77,7 +77,7 @@ export function ContactForm() {
               Demandez votre devis gratuit
             </h3>
             <p className="text-lg text-gray-600 mb-12">
-              Vous avez un projet de rénovation ? Remplissez le formulaire ci-contre et nous vous répondrons dans les plus brefs délais pour une estimation personnalisée.
+              Vous avez un projet de r��novation ? Remplissez le formulaire ci-contre et nous vous répondrons dans les plus brefs délais pour une estimation personnalisée.
             </p>
             <div className="space-y-8">
               <div className="flex items-start gap-4">
@@ -97,7 +97,6 @@ export function ContactForm() {
                 <div>
                   <h4 className="font-bold text-gray-900 text-lg">Email</h4>
                   <p className="text-gray-600">contact@enduit-plus.fr</p>
-                  {/* Removed "Réponse sous 24h garantie" as requested */}
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -186,18 +185,18 @@ export function ContactForm() {
                     <FormItem>
                       <FormLabel>Message</FormLabel>
                       <FormControl>
-                        <Textarea
-                          placeholder="Décrivez votre projet en quelques mots..."
+                        <Textarea 
+                          placeholder="Décrivez votre projet en quelques mots..." 
                           className="min-h-[120px] bg-white resize-none"
-                          {...field}
+                          {...field} 
                         />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
                   )}
                 />
-                <Button
-                  type="submit"
+                <Button 
+                  type="submit" 
                   className="w-full bg-brand hover:bg-brand-500 text-gray-900 font-bold py-6 text-lg shadow-md transition-all"
                   disabled={isSubmitting}
                 >
