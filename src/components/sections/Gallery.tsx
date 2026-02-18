@@ -9,7 +9,7 @@ const projects = [
     category: 'Ravalement Complet',
     // Using a dirty/clean contrast for demo purposes
     beforeImage: 'https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=2070&auto=format&fit=crop', // Old stone look
-    afterImage: 'https://images.unsplash.com/photo-1600596542815-3ad196bb4a7f?q=80&w=2069&auto=format&fit=crop', // Modern clean look
+    afterImage: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop', // Modern clean look - Updated URL
   },
   {
     id: 2,
@@ -60,7 +60,7 @@ export function Gallery() {
             >
               <div className="p-1">
                 <AspectRatio ratio={16 / 10} className="overflow-hidden rounded-xl">
-                  <BeforeAfterSlider 
+                  <BeforeAfterSlider
                     beforeImage={project.beforeImage}
                     afterImage={project.afterImage}
                     alt={project.title}
