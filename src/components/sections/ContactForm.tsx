@@ -97,7 +97,7 @@ export function ContactForm() {
                 <div>
                   <h4 className="font-bold text-gray-900 text-lg">Email</h4>
                   <p className="text-gray-600">contact@enduit-plus.fr</p>
-                  <p className="text-sm text-gray-500 mt-1">Réponse sous 24h garantie</p>
+                  {/* Removed "Réponse sous 24h garantie" as requested */}
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -186,18 +186,18 @@ export function ContactForm() {
                     <FormItem>
                       <FormLabel>Message</FormLabel>
                       <FormControl>
-                        <Textarea 
-                          placeholder="Décrivez votre projet en quelques mots..." 
+                        <Textarea
+                          placeholder="Décrivez votre projet en quelques mots..."
                           className="min-h-[120px] bg-white resize-none"
-                          {...field} 
+                          {...field}
                         />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
                   )}
                 />
-                <Button 
-                  type="submit" 
+                <Button
+                  type="submit"
                   className="w-full bg-brand hover:bg-brand-500 text-gray-900 font-bold py-6 text-lg shadow-md transition-all"
                   disabled={isSubmitting}
                 >
