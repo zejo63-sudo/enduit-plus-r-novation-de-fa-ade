@@ -14,8 +14,8 @@ export function Footer() {
             <div className="flex items-center gap-2 group cursor-pointer" onClick={scrollToTop}>
               <div className="bg-white p-3 rounded-lg shadow-sm group-hover:shadow-glow transition-all duration-300 inline-block">
                 <img
-                  src="https://i.imgur.com/7wMfpQd.png"
-                  alt="Enduit Plus 63 Logo"
+                  src="https://enduitplus.fr/logo-2.png"
+                  alt="Enduit Plus Logo"
                   className="h-14 w-auto object-contain"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
@@ -76,7 +76,7 @@ export function Footer() {
             © {new Date().getFullYear()} Enduit Plus 63. Tous droits réservés.
           </p>
           <div className="flex items-center gap-4">
-             <p className="text-gray-600 text-xs">Built with ❤�� by Aurelia</p>
+             <p className="text-gray-600 text-xs">Built with ❤️ by Aurelia</p>
              <Button
               variant="outline"
               size="icon"
