@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 const services = [
   {
     icon: PaintRoller,
-    title: 'Ravalement de Fa��ade',
+    title: 'Ravalement de Façade',
     description: 'Nettoyage, réparation et mise en peinture pour redonner l\'éclat du neuf à votre habitation.',
   },
   {

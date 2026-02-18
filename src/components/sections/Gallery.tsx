@@ -9,7 +9,7 @@ const projects = [
     category: 'Ravalement Complet',
     // Using a dirty/clean contrast for demo purposes
     beforeImage: 'https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=2070&auto=format&fit=crop', // Old stone look
-    afterImage: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop', // Modern clean look - Updated URL
+    afterImage: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop', // Modern clean look - Verified URL
   },
   {
     id: 2,
