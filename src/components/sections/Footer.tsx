@@ -14,7 +14,7 @@ export function Footer() {
             <div className="flex items-center gap-2 group cursor-pointer" onClick={scrollToTop}>
               <div className="bg-white p-3 rounded-lg shadow-sm group-hover:shadow-glow transition-all duration-300 inline-block">
                 <img
-                  src="https://enduitplus.fr/logo-2.png"
+                  src="https://martincorgne.fr/logo.png"
                   alt="Enduit Plus Logo"
                   className="h-14 w-auto object-contain"
                   onError={(e) => {

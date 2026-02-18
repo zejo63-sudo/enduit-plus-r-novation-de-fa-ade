@@ -45,7 +45,7 @@ export function Navbar() {
             onClick={() => scrollToSection('#hero')}
           >
             <img
-              src="https://enduitplus.fr/logo-2.png"
+              src="https://martincorgne.fr/logo.png"
               alt="Enduit Plus Logo"
               className="h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               onError={(e) => {
@@ -86,7 +86,7 @@ export function Navbar() {
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <SheetTitle className="text-left text-lg font-bold mb-6 flex items-center gap-2">
                   <img
-                    src="https://enduitplus.fr/logo-2.png"
+                    src="https://martincorgne.fr/logo.png"
                     alt="Enduit Plus Logo"
                     className="h-12 w-auto object-contain"
                   />
