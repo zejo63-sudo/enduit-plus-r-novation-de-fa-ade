@@ -77,7 +77,7 @@ export function ContactForm() {
               Demandez votre devis gratuit
             </h3>
             <p className="text-lg text-gray-600 mb-12">
-              Vous avez un projet de rénovation ? Remplissez le formulaire ci-contre et nous vous répondrons dans les plus brefs délais pour une estimation personnalisée.
+              Vous avez un projet de rénovation ? Remplissez le formulaire ci-contre et nous vous répondrons dans les plus brefs délais pour une estimation personnalis��e.
             </p>
             <div className="space-y-8">
               <div className="flex items-start gap-4">
@@ -106,7 +106,7 @@ export function ContactForm() {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 text-lg">Zone d'intervention</h4>
-                  <p className="text-gray-600">Lyon et sa région (50km alentours)</p>
+                  <p className="text-gray-600">Rhone Alpes Auvergne</p>
                 </div>
               </div>
             </div>
@@ -188,7 +188,7 @@ export function ContactForm() {
                       <FormControl>
                         <Textarea 
                           placeholder="Décrivez votre projet en quelques mots..." 
-                          className="min-h-[120px] bg-white resize-none" 
+                          className="min-h-[120px] bg-white resize-none"
                           {...field} 
                         />
                       </FormControl>
