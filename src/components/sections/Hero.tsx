@@ -36,7 +36,7 @@ export function Hero() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 max-w-lg leading-relaxed">
-              Donnez une nouvelle vie �� vos façades. Spécialistes en ravalement, isolation extérieure et peinture de façade depuis plus de 10 ans.
+              Donnez une nouvelle vie à vos façades. Spécialistes en ravalement, isolation extérieure et peinture de façade depuis plus de 10 ans.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
@@ -60,7 +60,7 @@ export function Hero() {
               {[
                 'Garantie Décennale',
                 'Devis gratuit',
-                '��quipe Qualifiée',
+                'Équipe Qualifiée',
                 'Matériaux Premium'
               ].map((item) => (
                 <div key={item} className="flex items-center gap-2 text-gray-700 font-medium">

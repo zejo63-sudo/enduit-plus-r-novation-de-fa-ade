@@ -25,7 +25,7 @@ import { toast } from 'sonner';
 const formSchema = z.object({
   name: z.string().min(2, { message: 'Le nom doit contenir au moins 2 caractères.' }),
   email: z.string().email({ message: 'Adresse email invalide.' }),
-  phone: z.string().min(10, { message: 'Numéro de tél��phone invalide.' }),
+  phone: z.string().min(10, { message: 'Numéro de téléphone invalide.' }),
   service: z.string().min(1, { message: 'Veuillez sélectionner un service.' }),
   message: z.string().min(10, { message: 'Votre message doit contenir au moins 10 caractères.' }),
 });
@@ -77,7 +77,7 @@ export function ContactForm() {
               Demandez votre devis gratuit
             </h3>
             <p className="text-lg text-gray-600 mb-12">
-              Vous avez un projet de r��novation ? Remplissez le formulaire ci-contre et nous vous répondrons dans les plus brefs délais pour une estimation personnalisée.
+              Vous avez un projet de rénovation ? Remplissez le formulaire ci-contre et nous vous répondrons dans les plus brefs délais pour une estimation personnalisée.
             </p>
             <div className="space-y-8">
               <div className="flex items-start gap-4">
