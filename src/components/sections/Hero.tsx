@@ -36,7 +36,7 @@ export function Hero() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 max-w-lg leading-relaxed">
-              Donnez une nouvelle vie à votre maison. Spécialistes en ravalement, isolation extérieure et peinture de façade depuis plus de 10 ans.
+              Donnez une nouvelle vie à vos façades. Spécialistes en ravalement, isolation extérieure et peinture de façade depuis plus de 10 ans.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
