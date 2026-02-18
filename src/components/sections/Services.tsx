@@ -5,13 +5,13 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 const services = [
   {
     icon: PaintRoller,
-    title: 'Ravalement de Façade',
+    title: 'Ravalement de Fa��ade',
     description: 'Nettoyage, réparation et mise en peinture pour redonner l\'éclat du neuf à votre habitation.',
   },
   {
     icon: Home,
     title: 'Isolation Extérieure (ITE)',
-    description: 'Am��liorez votre confort thermique et réduisez vos factures d\'énergie grâce à une isolation performante.',
+    description: 'Améliorez votre confort thermique et réduisez vos factures d\'énergie grâce à une isolation performante.',
   },
   {
     icon: Droplets,
