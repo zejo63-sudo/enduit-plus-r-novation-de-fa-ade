@@ -45,9 +45,15 @@ export function Navbar() {
             onClick={() => scrollToSection('#hero')}
           >
             <img
-              src="https://i.imgur.com/tL8Zq5N.png"
+              src="https://i.imgur.com/7wMfpQd.png"
               alt="Enduit Plus 63 Logo"
               className="h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              onError={(e) => {
+                // Fallback if the direct link fails, though unlikely for imgur
+                e.currentTarget.style.display = 'none';
+                e.currentTarget.parentElement!.innerText = 'Enduit Plus 63';
+                e.currentTarget.parentElement!.className = 'text-2xl font-bold text-gray-900';
+              }}
             />
           </div>
           {/* Desktop Navigation */}
@@ -81,7 +87,7 @@ export function Navbar() {
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <SheetTitle className="text-left text-lg font-bold mb-6 flex items-center gap-2">
                   <img
-                    src="https://i.imgur.com/tL8Zq5N.png"
+                    src="https://i.imgur.com/7wMfpQd.png"
                     alt="Enduit Plus 63 Logo"
                     className="h-12 w-auto object-contain"
                   />
